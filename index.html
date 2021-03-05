@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        .root {
+            max-width: 400px;
+            margin: 30px auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .content h3 {
+            margin: 25px 0 15px 0;
+        }
+
+        span {
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkslateblue;
+        }
+
+        span::before {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            right: 0;
+            bottom: -7px;
+            background: #0AF;
+            transition: transform 300ms ease-in-out;
+            transform: scaleX(0);
+        }
+
+        span:hover::before {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <h2>This is Practical 1 </h2>
+
+        <div class="content">
+            <h3><small>view the</small> <span><a href="./Pages/Resume.html">HTML Resume</a></span></h3>
+            <h3><small>view the</small> <span><a href="./Pages/Book-Store.html">Book Store Page</a></span></h3>
+        </div>
+
+    </div>
+</body>
+
+</html>

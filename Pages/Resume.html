@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyResume</title>
+
+    <style>
+      nav ul li{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           display: inline-block;
+           list-style: none;
+           padding:7px 10px;
+           font-size: 1.2em;
+           transition: 0.3s background-color ease-in-out;
+       }
+      nav ul li:hover{
+          background-color: dimgrey;
+       }
+      nav ul li>a{
+           text-decoration: none;
+           color: #000;
+           transition: 0.3s background-color ease-in-out;
+       }
+      nav ul li>a:hover{
+           color: #fff;
+       }
+       .main{
+           max-width: 800px;
+           margin: 20px auto;
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           position: relative;
+           color: #6a8995;
+       }
+       .main h2{
+           text-align: center;
+           font-size: 2.3em;
+           animation: fromTop 1.5s forwards;
+           position: relative;
+           color: darkslategrey;
+       }
+       .main h2::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: darkkhaki;
+          z-index: -1;
+          transform: scaleX(0);
+          transition: transform 0.5s ease-in;
+       }
+       .main h2:hover::before{
+          transform: scaleX(1);
+          line-height: -10px;
+       }
+       .main h2 span{
+           font-size: 1.5em;
+           text-transform: uppercase;
+       }
+       @keyframes fromTop {
+           0%{
+               transform: translateY(-200px);
+           }
+           100%{
+               transform: translateY(0px);
+           }
+       }
+       .all-style{
+          padding:0.8rem 1rem;
+          font-family: cursive;
+          color:rgb(76, 100, 34);
+          margin: 0.6rem 0 1.5rem 0;
+          font-size: 1.2em;
+          transition:background 0.4s ease-in;
+          transition: color 0.3s ease-in;
+       } 
+       .all-style:hover{
+          background:rgb(55, 71, 87);
+          color: #fff;
+       } 
+       .all-style h5,h6{
+          margin: 1.09em;
+          padding: 0;
+       } 
+       .myInfo{
+          animation: left-right 1s forwards;
+       }
+       .education{
+          animation: right-left 1s forwards;
+       }
+       .skills{
+        animation: left-right 1s forwards;
+          font-size: 1.1em ;
+       }
+       .summary{
+        animation: right-left 1s forwards;
+       }
+       .experience{
+        animation: left-right 1s forwards;
+       }
+       .name{
+           font-size: 1.7em;
+       }
+       
+       .label{
+           padding:0.7rem 0.9rem;
+           margin: 0;
+           font-size: 1.9em;
+           font-family:unset;
+           font-weight: lighter;
+           transition:background 0.4s ease-in;
+       }
+       .label:hover{
+           background:#4a3843;
+           color: #fff;
+       }
+       
+
+       @keyframes left-right{
+           0%{
+               transform: translateX(-600px);
+           }
+           100%{
+               transform: translateX(0px);
+           }
+       }
+       @keyframes right-left{
+           0%{
+               transform: translateX(600px);
+           }
+           100%{
+               transform: translateX(0px);
+           }
+       }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./Resume.html">Resume</a></li>
+            <li><a href="./Book-Store.html">Book Store</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <h2>Welcome To <span>Resume</span></h2>
+        <hr >
+
+        <div class="all-style myInfo">
+            <h5 style="font-weight: bolder;"> <span  class="name">Amey Abhayrao Jakate</span> </h5>
+            <h5>2019BIT023 | A-25</h5>
+            <h5>sarafa | Nanded-431604</h5>
+            <h5>ameyjakate2001@gmail.com  |  linkedin.com/in/amey-jakate-07574919b</h5>
+        </div>
+ 
+        <h3 class="label">Education</h3>
+        <div class="all-style education">
+             <h5>Shri Guruji Gobind Singhji Institute of Engineering and Technology (SGGSIET), Nanded</h5>
+             <h5>Persuing BTech in Information Technology.</h5>
+             <h5>2nd Year - 2021</h5>
+        </div>
+ 
+        <h3 class="label">Skills</h3>
+        <div class="all-style skills">
+          <p>I am Full Stack Developer. I have Knowledge about different Web Technologies. </p>
+            <ul>
+                <li>HTML , CSS , JS</li>
+                <li>VUE JS</li>
+                <li>NODE JS</li>
+                <li>MONGODB</li>
+            </ul>
+        </div>
+
+        <h3 class="label">Summary</h3>
+        <div class="all-style summary">
+            <p>I am skilled in C , C++ languages. and Can solve Problems efficiently</p>
+        </div>
+
+        <h3 class="label">Experience</h3>
+        <div class="all-style experience">
+            <h5>I am Joint Coordinator of Web Commity of UTSAV-2021.</h5>
+            <h5>I am Taken Part in Hackathon 2021.</h5>
+            <h5>I was front end developer Intern at Hidation in 2020</h5>
+        </div>
+    </main>
+
+</body>
+</html>
